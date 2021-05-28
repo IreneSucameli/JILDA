@@ -44,12 +44,8 @@ All the DAs can be referred both to the applicant’s utterances (aka usr) and t
 
 ## Cite
 
-@Article{Sucameli,
-  author = "Sucameli, Irene and Lenci, Alessandro and  Magnini, Bernardo and Simi, Maria and Speranza, Manuela",
-  title = 	"Becoming JILDA",  
-  journal = "In Proceedings of the Seventh Italian Conference on Computational Linguistics CLIC-it 2020",
-  year = "2020"
-}
+Irene   Sucameli,   Alessandro   Lenci,   BernardoMagnini,  Maria  Simi,  and  Manuela  Speranza. 2020.   
+Becoming jilda.In Proceedings of theSeventh Italian Conference on ComputationalLinguistics CLIC-it 2020.
 
 
 ## People
