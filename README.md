@@ -1,6 +1,6 @@
 # JILDA
 
-JILDA (Job Interview Labelled Dialogues Assembly) is a novel collections of chat-based mixed-initiative, human-human dialogues
+JILDA (Job Interview Labelled Dialogues Assembly) is a novel collection of chat-based mixed-initiative, human-human dialogues
 related to the job offer domain and for the Italian language.
 
 JILDA dialogues were collected using a Map-Task approach which involved 50 Italian native speakers to simulate. These speakers simulated a chat-based
