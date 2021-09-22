@@ -44,11 +44,14 @@ All the DAs can be referred both to the applicant’s utterances (aka usr) and t
 
 ## Cite
 
-Irene   Sucameli,   Alessandro   Lenci,   Bernardo Magnini,  Maria  Simi,  and  Manuela  Speranza. 2020.   
-Becoming JILDA. In Proceedings of the Seventh Italian Conference on Computational Linguistics CLIC-it 2020.
+Irene   Sucameli,   Alessandro   Lenci,   Bernardo Magnini,  Maria  Simi,  and  Manuela  Speranza. 2021.   
+Toward Data-Driven Collaborative DialogueSystems: The JILDA Dataset. In IJCOL
 
 
 ## People
-- Maria Simi, professor - Dept. of Computer Science (Universtiy of Pisa)
-- Irene Sucameli, PhD student - Dept. of Computer Science (University of Pisa)
-- Davide Cucurnia, MA student - Dept. of Computer Science (Universtiy of Pisa)
+- Irene Sucameli - University of Pisa
+- Alessandro Lenci - University of Pisa
+- Bernando Magnini - FBK
+- Maria Simi - University of Pisa
+- Manuela Speranza - FBK
+
