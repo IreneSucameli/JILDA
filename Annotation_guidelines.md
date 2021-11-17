@@ -123,10 +123,11 @@ In questo caso, nel turno 11, il sistema non ha risposto immediatamente alla dom
 
 Gli slot rappresentano le informazioni che vogliamo estrarre dalla frase, relativamente al dominio delle offerte di lavoro.
 
-Esempio:
-FRASE: usr: “mi sono appena laureata in infermieristica”
-ENTITY: job offer
-DIALOGUE ACT: sys-inform-basic
+Esempio: <br />
+FRASE: usr: “mi sono appena laureata in infermieristica” <br />
+ENTITY: job offer <br />
+DIALOGUE ACT: sys-inform-basic <br />
+
 In questo caso l’informazione che ci interessa estrarre dalla frase è relativa al titolo di studio del parlante (degree). Andremo quindi a selezionare lo slot degree e, nella casella di testo sottostante, a inserire il valore “infermieristica”
 
 
@@ -143,95 +144,106 @@ slot: duties:sicurezza sul lavoro e quella alimentare
 
 Gli slot possibili sono:
 
-### job_description: descrizione del lavoro che viene offerto. Es. 
-sys= “ Dalla ricerca, è emersa un'offerta di lavoro come infermiere in soggiorni vacanza per minori”
-La frase sarà annotata con 
-dialogue act:  sys-select,
+### job_description: descrizione del lavoro che viene offerto. 
+
+Es. sys= “ Dalla ricerca, è emersa un'offerta di lavoro come infermiere in soggiorni vacanza per minori”
+La frase sarà annotata con <br />
+dialogue act:  sys-select, <br />
 slot: job description: infermiere
 
 ### contract: il tipo di contratto lavorativo offerto/richiesto: tempo determinato, part time, etc
 
-### duties: principali mansioni che l’utente dovrà svolgere se verrà selezionato per quel lavoro. Es.
-sys: “Ok ho trovato un'offerta che risponde ai tuoi interessi: si tratta di uno stage post-laurea nel settore alimentari. Cercano una figura che si occupi della pianificazione del budget e del rendiconto economico, oltre a garantire la sicurezza sul lavoro e quella alimentare.”
-dialogue act: sys-select
-slot: contract: stage post-laurea
-slot: area: settore alimentari
-slot: duties: pianificazione del budget 
-slot: duties:rendiconto economico 
-slot: duties:sicurezza sul lavoro e quella alimentare
+### duties: principali mansioni che l’utente dovrà svolgere se verrà selezionato per quel lavoro. 
 
-### skills: che tipo di competenze sono richieste per il lavoro o, più in generale, le competenze che l’utente possiede (incluse le soft skill). Es.
-usr: “ Lavoro bene in team e col pacchetto Office non ho problemi”
-dialogue act: usr-inform-basic
-slot: skills:  Lavoro bene in team 
-slot:skills: pacchetto Office 
+Es. sys: “Ok ho trovato un'offerta che risponde ai tuoi interessi: si tratta di uno stage post-laurea nel settore alimentari. Cercano una figura che si occupi della pianificazione del budget e del rendiconto economico, oltre a garantire la sicurezza sul lavoro e quella alimentare.” <br />
+dialogue act: sys-select <br />
+slot: contract: stage post-laurea <br />
+slot: area: settore alimentari <br />
+slot: duties: pianificazione del budget <br />
+slot: duties:rendiconto economico <br />
+slot: duties:sicurezza sul lavoro e quella alimentare <br />
+
+### skills: che tipo di competenze sono richieste per il lavoro o, più in generale, le competenze che l’utente possiede (incluse le soft skill).
+
+Es. usr: “ Lavoro bene in team e col pacchetto Office non ho problemi” <br />
+dialogue act: usr-inform-basic <br />
+slot: skills:  Lavoro bene in team <br />
+slot:skills: pacchetto Office <br />
 
 ### past_experience: esperienze lavorative pregresse dell’utente 
-Es. usr: “ ho lavorato per un anno presso un ospedale a Roma, nel reparto di pediatria”
-dialogue act: usr-inform-basic
-slot: past_experience: ospedale 
+
+Es. usr: “ ho lavorato per un anno presso un ospedale a Roma, nel reparto di pediatria” <br />
+dialogue act: usr-inform-basic <br />
+slot: past_experience: ospedale  <br />
 
 ### degree: laurea o altro titolo di studio. Si può annotare come degree sia la facoltà/scuola/corso seguito che il titolo di studio (es. laurea triennale, master, etc)
-Es usr: “mi sono laureata in infermieristica”.
-dialogue act: usr-inform-basic
-slot: degree: infermieristica
+
+Es usr: “mi sono laureata in infermieristica”.  <br />
+dialogue act: usr-inform-basic <br />
+slot: degree: infermieristica <br />
 
 ### age: informazioni relative all’età dell’utente o della figura professionale ricercata
-Es. sys: “cercano un giovane neolaureato”
-slot: degree: neolaureato
-slot: age: giovane
 
-### languages: conoscenza di lingue straniere richieste per il lavoro o parlate dall’utente. Es.
-usr: “conosco inglese e tedesco, entrambe a livello B1”
-dialogue act: usr-inform-basic
-slot:languages: inglese 
-slot:languages: tedesco
+Es. sys: “cercano un giovane neolaureato” <br />
+slot: degree: neolaureato <br />
+slot: age: giovane <br />
+
+### languages: conoscenza di lingue straniere richieste per il lavoro o parlate dall’utente. 
+
+Es. usr: “conosco inglese e tedesco, entrambe a livello B1” <br />
+dialogue act: usr-inform-basic <br />
+slot:languages: inglese  <br />
+slot:languages: tedesco <br />
 
 eventualmente è possibile annotare con un altro slot languages anche “B1”
 
-### area: settore disciplinare entro cui si colloca la posizione lavorativa:
-Es. usr: “ Mi piacerebbe lavorare nel mondo della pubblicità e della comunicazione”
-dialogue act: usr-inform-basic
-slot: area: pubblicità 
-slot: area: comunicazione
+### area: settore disciplinare entro cui si colloca la posizione lavorativa: 
+
+Es. usr: “ Mi piacerebbe lavorare nel mondo della pubblicità e della comunicazione” <br />
+dialogue act: usr-inform-basic <br />
+slot: area: pubblicità  <br />
+slot: area: comunicazione <br />
 
 ### company_name: nome dell’azienda che offre la posizione lavorativa
 
 ### company_size: dimensioni dell’azienda (es. piccola, media, grande, meno di 200 impiegati, più di 50 etc)
 
-### location: in che località si trova il lavoro (Italia, estero, nome regione o città). Es.
-sys: “Compass Group Italia S.p.A, è una  grande azienda con base a Milano”
-dialogue act: sys-inform-basic
-slot: company name: Compass Group Italia S.p.A.
-slot: company size: grande azienda
-slot: location: Milano
+### location: in che località si trova il lavoro (Italia, estero, nome regione o città). 
 
-### contact: informazioni di contatto dell’azienda (email, numero di telefono etc.) Es.
-sys: “Puoi contattare l’azienda al seguente indirizzo e-mail: info@azienda.com”
-dialogue act: sys-inform-basic
-slot: company contact: info@azienda.com
+Es. sys: “Compass Group Italia S.p.A, è una  grande azienda con base a Milano”  <br />
+dialogue act: sys-inform-basic <br />
+slot: company name: Compass Group Italia S.p.A. <br />
+slot: company size: grande azienda <br />
+slot: location: Milano <br />
+
+### contact: informazioni di contatto dell’azienda (email, numero di telefono etc.) 
+
+Es. sys: “Puoi contattare l’azienda al seguente indirizzo e-mail: info@azienda.com” <br />
+dialogue act: sys-inform-basic <br />
+slot: company contact: info@azienda.com <br />
 
 ### other: per annotare tutte quelle informazioni non richieste o al momento non utilizzabili dal sistema ma comunque legate al dominio delle job offer
 
-Ogni frase può essere annotata con più dialogue act e/o più slot.
-Es. usr: “mi sono laureato in filosofia, e cerco un lavoro come insegnante”
-Dialogue act:
- usr-inform + usr-request
-Slot:
- degree:  filosofia
- job_description: insegnante
+Ogni frase può essere annotata con più dialogue act e/o più slot. <br />
+Es. usr: “mi sono laureato in filosofia, e cerco un lavoro come insegnante” <br />
+Dialogue act: <br />
+ usr-inform + usr-request <br />
+Slot: <br />
+ degree:  filosofia <br />
+ job_description: insegnante <br />
  
 Oppure, nel turno descritto di seguito, la frase del sistema sarà così annotata:
  
-"usr": "Sì, potrei essere interessata ma al momento ho bisogno di un lavoro retribuito. Offrono qualche tipo di remunerazione per il tirocinio?"
-"sys": "Non viene fornita nessuna informazione esplicita. Dovresti contattare direttamente l'azienda. Si tratta di QUANTA.  L'indirizzo per contattarli e': info@azienda.com" 
-Dialogue act:
- sys-deny + sys- inform-proactive
-Slot:
- company_name: QUANTA
- contact: info@azienda.com
+"usr": "Sì, potrei essere interessata ma al momento ho bisogno di un lavoro retribuito. Offrono qualche tipo di remunerazione per il tirocinio?" <br />
+"sys": "Non viene fornita nessuna informazione esplicita. Dovresti contattare direttamente l'azienda. Si tratta di QUANTA.  L'indirizzo per contattarli e': info@azienda.com"  <br />
+Dialogue act: <br />
+ sys-deny + sys- inform-proactive <br />
+Slot: <br />
+ company_name: QUANTA <br />
+ contact: info@azienda.com <br />
  
 NOTA BENE: non tutti gli slot sono disponibili per tutti gli act.
+
 IMPORTANTE: Tutti i turni semanticamente informativi del dialogo devono essere annotati. I turni che non veicolano informazioni (vedi esempi sotto) possono non essere annotati:
 sys: "Ho due opportunità per cui il tuo profilo potrebbe essere interessante",
 oppure usr: “spero non sia un problema”.
