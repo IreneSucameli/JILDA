@@ -45,7 +45,7 @@ All the DAs can be referred both to the applicant’s utterances (aka usr) and t
 ## Cite
 
 Irene   Sucameli,   Alessandro   Lenci,   Bernardo Magnini,  Maria  Simi,  and  Manuela  Speranza. 2021.   
-Toward Data-Driven Collaborative DialogueSystems: The JILDA Dataset. In IJCOL
+Toward Data-Driven Collaborative DialogueSystems: The JILDA Dataset. In IJCOL - Italian Journal of Computational Linguistics, Volume 7, Number 1-2.
 
 
 ## People
